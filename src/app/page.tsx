@@ -230,8 +230,8 @@ export default function GamePage() {
         if ((currentBiome === 'desert' && player.z === 0)) tempChange = 0.5;
         else if (currentBiome === 'mountain' || player.z > 0) tempChange = -0.4;
         else {
-          if (newStats.temperature > 37) tempChange = -0.2;
-          else if (newStats.temperature < 37) tempChange = 0.2;
+          if (newStats.temperature > 37.1) tempChange = -0.2;
+          else if (newStats.temperature < 36.9) tempChange = 0.2;
         }
         newStats.temperature += tempChange;
 
