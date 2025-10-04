@@ -6,17 +6,18 @@ const SKILL_DISPLAY_NAMES: Record<SkillName, string> = {
   woodcutting: 'Silvicultura',
   foraging: 'Coleta',
   mining: 'Mineração',
+  hunting: 'Caça',
+  cooking: 'Cozinhar',
 };
 
 const PlayerSkills = ({ skills }: { skills: Skills }) => (
   <div className="panel">
     <h2>Habilidades</h2>
-    {Object.keys(skills).map(skillKey => {
-      const skill = skills[skillKey as SkillName];
+    {Object.entries(skills).map(([skillName, skill]) => {
       const progress = (skill.xp / skill.xpToNextLevel) * 100;
       return (
-        <div key={skillKey} style={{ marginBottom: '10px' }}>
-          <div>{SKILL_DISPLAY_NAMES[skillKey as SkillName]}: Nível {skill.level}</div>
+        <div key={skillName} style={{ marginBottom: '10px' }}>
+          <div>{SKILL_DISPLAY_NAMES[skillName as SkillName] || skillName}: Nível {skill.level}</div>
           <div style={{ border: '1px solid #444', borderRadius: '4px', padding: '2px', backgroundColor: '#1a1a1a' }}>
             <div style={{ 
               width: `${progress}%`, 

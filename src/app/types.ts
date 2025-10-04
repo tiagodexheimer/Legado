@@ -11,7 +11,34 @@ export type ResourceName =
   | 'RampUp' 
   | 'RampDown'
   | 'Machado Primitivo'
-  | 'Picareta Primitiva';
+  | 'Picareta Primitiva'
+  | 'Carne de Galinha Crua'
+  | 'Carne de Galinha Cozida'
+  | 'Fogueira'
+  | 'Minério de Ferro'
+  | 'Barra de Ferro'
+  | 'Picareta de Ferro'
+  | 'Machado de Ferro'
+  | 'Pregos'
+  | 'Tábua'
+  | 'Parede de Madeira'
+  | 'Porta de Madeira';
+
+export type CampfireData = {
+  id: string;
+  x: number;
+  y: number;
+  z: number;
+};
+
+export type Chicken = {
+  id: string;
+  x: number;
+  y: number;
+  z: number;
+  health: number;
+  maxHealth: number;
+};
 
 export type TerrainType = 'grass' | 'water' | 'rock' | 'sand';
 
@@ -44,8 +71,13 @@ export type MapCell = {
 
 export type MapChunk = MapCell[][];
 
+export type ChunkData = {
+  cells: MapCell[][];
+  chickens: Chicken[];
+};
+
 export type LoadedChunks = {
-  [key: string]: MapChunk;
+  [key: string]: ChunkData;
 };
 
 export type Player = {
@@ -73,6 +105,7 @@ export type Skill = {
   xpToNextLevel: number;
 };
 
-export type SkillName = 'woodcutting' | 'foraging' | 'mining';
+export type SkillName = 'woodcutting' | 'foraging' | 'mining' | 'hunting' | 'cooking';
+
 
 export type Skills = Record<SkillName, Skill>;

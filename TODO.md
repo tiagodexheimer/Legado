@@ -10,8 +10,8 @@ Este arquivo `TODO.md` descreve a lista de tarefas de alto nível para implement
 ## Fase 1: Era Paleolítica (Fundação da Sobrevivência)
 
 ### Core Engine & Mundo (Unreal Engine 5)
-- [ ] **Sistema de Voxel:** Desenvolver ou integrar um sistema de voxel para o terreno.
-  - [ ] Geração procedural de mundo voxel com múltiplos biomas (ruído Perlin/Simplex).
+- [x] **Sistema de Voxel:** Desenvolver ou integrar um sistema de voxel para o terreno.
+  - [x] Geração procedural de mundo voxel com múltiplos biomas (ruído Perlin/Simplex).
   - [ ] Modificação do terreno em tempo real (escavação, construção).
   - [ ] Geração de mesh em tempo de execução (ex: Marching Cubes).
   - [ ] Simulação de física em estruturas voxel (desmoronamentos).
@@ -28,21 +28,21 @@ Este arquivo `TODO.md` descreve a lista de tarefas de alto nível para implement
 - [ ] **Personagem:**
   - [ ] Tela de criação de personagem (aparência básica).
   - [ ] Sistema de Atributos Primários (Força, Agilidade, Vigor, etc.).
-  - [ ] Sistema de Habilidades baseado no uso (ex: usar machado aumenta Silvicultura).
+  - [x] Sistema de Habilidades baseado no uso (ex: usar machado aumenta Silvicultura).
 - [ ] **Sobrevivência:**
-  - [ ] Gerenciamento de necessidades: Fome, Sede, Temperatura Corporal.
-  - [ ] Sistema de Saúde e Condições (ferimentos, doenças, envenenamento).
-  - [ ] HUD (interface de usuário) para exibir status (UMG).
+  - [x] Gerenciamento de necessidades: Fome, Sede, Temperatura Corporal.
+  - [x] Sistema de Saúde e Condições (ferimentos, doenças, envenenamento).
+  - [x] HUD (interface de usuário) para exibir status (UMG).
 
 ### Física e Interação (Chaos Physics)
 - [ ] **Coleta de Recursos:**
   - [ ] **Corte de Árvores:** Física de queda controlada, divisão de toras em minigame.
-  - [ ] **Mineração:** Fragmentação de rochas, interação com o terreno voxel.
-  - [ ] **Caça e Pesca:** Balística realista para projéteis (flechas, lanças), detecção de acerto em ossos específicos dos animais.
+  - [x] **Mineração:** Fragmentação de rochas, interação com o terreno voxel.
+  - [x] **Caça e Pesca:** Balística realista para projéteis (flechas, lanças), detecção de acerto em ossos específicos dos animais.
 - [ ] **Crafting Imersivo:**
   - [ ] **Lascagem de Pedra (Knapping):** Minigame interativo de fratura procedural ou pré-fraturada.
-  - [ ] **Fogueira:** Física de propagação de fogo, radiação de calor, reação ao vento.
-  - [ ] **Construção de Abrigos:** Empilhamento e amarração de objetos com `Physics Constraints`, cálculo de estabilidade estrutural.
+  - [x] **Fogueira:** Física de propagação de fogo, radiação de calor, reação ao vento.
+  - [x] **Construção de Abrigos:** Empilhamento e amarração de objetos com `Physics Constraints`, cálculo de estabilidade estrutural.
 - [ ] **Combate Físico:**
   - [ ] Simulação de peso e inércia de armas brancas.
   - [ ] Detecção de colisão precisa entre armas e corpos.
@@ -85,10 +85,10 @@ Este arquivo `TODO.md` descreve a lista de tarefas de alto nível para implement
 ## Fase 3: Idade do Bronze/Ferro (Metalurgia)
 
 - [ ] **Metalurgia:**
-  - [ ] Mineração de veios de minério em cavernas profundas (voxel).
-  - [ ] **Forja e Fundição:** Minigame de controle de temperatura, martelada e moldagem (física de deformação).
+  - [x] Mineração de veios de minério em cavernas profundas (voxel).
+  - [x] **Forja e Fundição:** Minigame de controle de temperatura, martelada e moldagem (física de deformação).
 - [ ] **Equipamentos:**
-  - [ ] Fabricação de armas e ferramentas de metal.
+  - [x] Fabricação de armas e ferramentas de metal.
   - [ ] Fabricação de armaduras e escudos.
 - [ ] **Transporte e Guerra:**
   - [ ] **Carroças:** Simulação física de peso e atrito em diferentes terrenos voxel.

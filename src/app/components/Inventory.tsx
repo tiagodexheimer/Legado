@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Inventory, ResourceName } from '../types';
 
-const consumableItems: ResourceName[] = ['Frutas'];
+const consumableItems: ResourceName[] = ['Frutas', 'Carne de Galinha Cozida'];
 
 const InventoryDisplay = ({ inventory, onConsume }: { inventory: Inventory, onConsume: (item: ResourceName) => void }) => (
   <div className="panel">
